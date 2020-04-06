@@ -12,14 +12,31 @@
           <div class="modal-body" >
             <div class="row">
               <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                <!-- for = conn -->
                     <center><h3><label for="conn">Nueva contraseña:</label></h3></center>
-                    <input type="text" id="conn" class="form-control" placeholder="Escribe tu nueva contraseña"  autofocus required>
+
+                    <!-- id = conn -->
+                    <input type="password" name="password" id="conn"  class="form-control" placeholder="Escribe tu nueva contraseña"  autofocus required>
+
+                    <button class="btn btn-secondary" type="button" onclick="MostrarContrasena()">Mostrar/Ocultar</button>
                 </div>
                 
+                
+                <!-- <div class="form-row">
+                  <div class="col">
+                    <input class="form-control" type="password" name="password" id="password">
+                  </div>
+                  <div class="col">
+                    <button class="btn btn-primary" type="button" onclick="MostrarContrasena()">Mostrar contraseña</button>
+                  </div>
+                </div> -->
+
                 <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12">
                 <br>
                     <center><h3><label for="reccn">Confirma contraseña:</label></h3></center>
-                    <input type="text" id="reccn" class="form-control" placeholder="Confirma tu nueva contraseña" onkeyup="comparepsw();" disabled required>
+                    <input type="password" name="password" id="reccn" class="form-control" placeholder="Confirma tu nueva contraseña" onkeyup="comparepsw();" disabled required>
+
+                    <button class="btn btn-secondary" type="button" onclick="MostrarContrasena2()">Mostrar/Ocultar</button>
                 </div>
                       <div id="pswd_info">
                         <center><h5>La contraseña debe cumplir con los siguientes requisitos:</h5></center>

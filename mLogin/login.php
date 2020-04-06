@@ -10,7 +10,9 @@
             </div>
             <div class="form-group has-feedback">
                 <label class="lblTitulo">Contraseña:</label>
-            <input type="password" id="loginContra" class="form-control" placeholder="Escribe la contraseña" required>
+            <input type="password" name="password" id="loginContra" class="form-control" placeholder="Escribe la contraseña" required>
+
+            <button class="btn btn-secondary" type="button" onclick="MostrarContrasenaL()">Mostrar/Ocultar</button>
            
             </div>
 

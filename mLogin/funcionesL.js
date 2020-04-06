@@ -432,15 +432,15 @@ $(document).ready(function() {
         //     }else{
         //         $("#reccn").attr("disabled","disabled");
         //     }
-        //     //Validar que la contraseña cuente con todos los aspectos
-        //     //antes mencionados
-        //     if((c+o+n+t+r+a)==6){
-        //         $("#btnguardar").removeAttr('disabled');
-        //     }
+            //Validar que la contraseña cuente con todos los aspectos
+            //antes mencionados
+        //     if((c+o+n+t+r+a)==6){                       
+            //     $("#btnguardar").removeAttr('disabled');
+            // }
 
-        //     else{
-        //         $("#btnguardar").attr("disabled","disabled");
-        //     }
+            // else{
+            //     $("#btnguardar").attr("disabled","disabled");
+            // }
     })
 });
 
@@ -456,3 +456,47 @@ function comparepsw(){
         $('#con').removeClass('valid').addClass('invalid');
     }
 }
+
+//cambiar contraseña desde dentro del sitema
+function ModalContraIn() {
+    $("#conn").val("");
+    $("#reccn").val("");
+    $('#modalcontra').modal("show");
+    // $('#letter').removeClass('valid').addClass('invalid');
+    // $('#capital').removeClass('valid').addClass('invalid');
+    // $('#number').removeClass('valid').addClass('invalid');
+    $('#length').removeClass('valid').addClass('invalid');
+    // $('#car').removeClass('valid').addClass('invalid');
+    $('#con').removeClass('invalid').addClass('valid');
+}
+
+// INICIA FUNCION PARA MOSTRAR/OCULTAR CONTRASEÑAS
+// Para Login
+function MostrarContrasenaL() {
+    var tipo = document.getElementById("loginContra");    
+    if (tipo.type == "password") {
+        tipo.type = "text";        
+    }else{
+        tipo.type = "password";
+    }
+}
+
+// Para Modal
+function MostrarContrasena() {
+    var tipo = document.getElementById("conn");    
+    if (tipo.type == "password") {
+        tipo.type = "text";        
+    }else{
+        tipo.type = "password";
+    }
+}
+
+function MostrarContrasena2() {
+    var tipo = document.getElementById("reccn");
+    if (tipo.type == "password") {
+        tipo.type = "text";        
+    }else{
+        tipo.type = "password";
+    }
+}
+// FINALIZA FUNCION PARA MOSTRAR/OCULTAR CONTRASEÑAS
